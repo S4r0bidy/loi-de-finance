@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loi de Finance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVBAR FIXE -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="brand" href="#accueil" data-index="0">BDC - Budjet des citoyens</a>
+      <ul class="nav-links">
+        <li><a href="#accueil" data-index="0">Accueil</a></li>
+        <li><a href="#perspective" data-index="1">Tableau</a></li>
+        <li><a href="#recettes" data-index="2">Graphe</a></li>
+        <li><a href="#depense" data-index="3">Dépenses</a></li>
+        <li><a href="#deficit" data-index="4">Déficit Budgétaire</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BOUTONS HAUT / BAS -->
+  <div class="nav-controls" aria-hidden="false">
+    <button id="prevBtn" class="control-btn" aria-label="Aller à la section précédente" title="Précédent">
+      <!-- SVG flèche haut -->
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+      </svg>
+    </button>
+
+    <button id="nextBtn" class="control-btn" aria-label="Aller à la section suivante" title="Suivant">
+      <!-- SVG flèche bas -->
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- SECTIONS PLEIN ÉCRAN -->
+  <main id="main">
+    <section id="accueil" class="section video-section" data-index="0" aria-label="Accueil">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/Man.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Perspectives économiques</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="paragraphe">
+              <p>En 2025, l’économie malgache
+                devrait connaître une croissance
+                de 5,0%, soutenue par des performances solides dans plusieurs
+                secteurs stratégiques</p>
+            </div>
+            <div class="texte">
+              <p><span>L’agriculture:</span> une augmentation
+                estimée de 9,5%, portée par la
+                production de riz amélioré, qui
+                permettra un rendement de plus
+                de 8 tonnes par hectare.</p>
+              <br>
+              <p><span>L’industrie extractive :</span> une
+                croissance de 4,0%, en raison de
+                la demande accrue liée aux énergies renouvelables et à la production de batteries pour véhicules
+                électriques.</p>
+              <br>
+              <p><span>Secteur tertiaire :</span> une croissance de 5,4%, avec des initiatives visant à attirer
+                davantage
+                de touristes et à développer les
+                infrastructures numériques. Pour
+                assurer une qualité des services
+                publics efficace et pérenne,
+                l’État envisage en 2025 d’aménager 6650 postes budgétaires
+                (dont 2150 à recruter par voie de
+                concours).</p>
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Liste des tableau</h2>
+            <p class="paraf">- Prévisions macroéconomiques</p>
+            <p class="paraf">- Taux de croissance sectorielle</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="perspective" class="section video-section" data-index="1" aria-label="perspective">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/Business.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h2>Prévisions macroéconomiques</h2>
+      </div>
+      <div class="tous hauteur">
+        <div class="contenu">
+          <table border="1" cellpadding="6" cellspacing="0">
+            <thead>
+              <tr>
+                <th>AGRÉGATS MACROÉCONOMIQUES</th>
+                <th>2024</th>
+                <th>2025</th>
+                <th>2026</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PIB nominal (milliards d’Ariary)</td>
+                <td>78 945,4</td>
+                <td>88 851,6</td>
+                <td>99 826,3</td>
+              </tr>
+              <tr>
+                <td>Taux de croissance économique</td>
+                <td>4,4</td>
+                <td>5,0</td>
+                <td>5,2</td>
+              </tr>
+              <tr>
+                <td>Indice des prix à la consommation (fin de période)</td>
+                <td>8,2</td>
+                <td>7,1</td>
+                <td>7,2</td>
+              </tr>
+              <tr>
+                <td>Ratio de dépenses publiques (% PIB)</td>
+                <td>16,2</td>
+                <td>18,4</td>
+                <td>17,8</td>
+              </tr>
+              <tr>
+                <td>Solde global (base caisse)</td>
+                <td>-4,3</td>
+                <td>-4,1</td>
+                <td>-4,1</td>
+              </tr>
+              <tr>
+                <td>Solde primaire (base caisse)</td>
+                <td>214,2</td>
+                <td>1 097,6</td>
+                <td>866,0</td>
+              </tr>
+              <tr>
+                <td>Dollars/Ariary (moyenne)</td>
+                <td>4 508,6</td>
+                <td>4 688,8</td>
+                <td>4 853,2</td>
+              </tr>
+              <tr>
+                <td>Euro/Ariary (moyenne)</td>
+                <td>4 905,5</td>
+                <td>5 275,2</td>
+                <td>5 532,7</td>
+              </tr>
+              <tr>
+                <td>Investissement public (% PIB)</td>
+                <td>6,1</td>
+                <td>9,6</td>
+                <td>8,3</td>
+              </tr>
+              <tr>
+                <td>Investissement privé (% PIB)</td>
+                <td>14,6</td>
+                <td>12,0</td>
+                <td>13,7</td>
+              </tr>
+              <tr>
+                <td>Taux de pression fiscale (% PIB)</td>
+                <td>10,6</td>
+                <td>11,2</td>
+                <td>11,8</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="sommaire graph">
+          <div class="controls">
+            <select id="filtre">
+              <option value="PIB nominal (milliards d’Ariary)">PIB nominal (milliards d’Ariary)</option>
+              <option value="Taux de croissance économique">Taux de croissance économique</option>
+              <option value="Indice des prix à la consommation (fin de période)">Indice des prix à la consommation
+              </option>
+              <option value="Ratio de dépenses publiques (% PIB)">Ratio de dépenses publiques (% PIB)</option>
+              <option value="Solde global (base caisse)">Solde global (base caisse)</option>
+              <option value="Solde primaire (base caisse)">Solde primaire (base caisse)</option>
+              <option value="Dollars/Ariary (moyenne)">Dollars/Ariary (moyenne)</option>
+              <option value="Euro/Ariary (moyenne)">Euro/Ariary (moyenne)</option>
+              <option value="Investissement public (% PIB)">Investissement public (% PIB)</option>
+              <option value="Investissement privé (% PIB)">Investissement privé (% PIB)</option>
+              <option value="Taux de pression fiscale (% PIB)">Taux de pression fiscale (% PIB)</option>
+            </select>
+
+            <select id="typeChart">
+              <option value="bar">Diagramme en bâtons</option>
+              <option value="line">Diagramme en lignes</option>
+              <option value="pie">Diagramme circulaire</option>
+            </select>
+          </div>
+          <br>
+          <canvas id="graphique"></canvas>
+
+          <!-- Chart.js local -->
+          <script src="chart.min.js"></script>
+
+        </div>
+    </section>
+
+    <section id="recettes" class="section video-section" data-index="2" aria-label="À propos">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/Stock.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Recettes publiques</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="questionnaire">
+              D’où viennent les ressources de l’État ?
+            </div>
+            <div class="texte">
+              <p>Les recettes publiques constituent la base du budget : impôts, droits de douane, dons et revenus non
+                fiscaux.
+                Cette section met en lumière la structure des recettes et leur évolution dans le temps.</p>
+            </div>
+            <div class="paragraphe">
+              🎯 Objectif de la section : Comprendre les sources de financement de l’État et leur poids dans le budget
+              global.
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Sommaire</h2>
+            <p class="paraf">1. Recette par sources</p>
+            <p class="paraf">2. Recette fiscale intérieur</p>
+            <p class="paraf">3. Recette douanières</p>
+            <p class="paraf">4. Recette non fiscales</p>
+            <p class="paraf">5. Don</p>
+          </div>
+        </div>
+      </div>
+      <div class="lien esp">
+        <a href="#">En savoir plus</a>
+      </div>
+    </section>
+
+    <section id="depense" class="section video-section" data-index="3" aria-label="Projets">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/deficit.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Dépenses publiques</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="questionnaire">
+              Comment l’État utilise-t-il les fonds collectés ?
+            </div>
+            <div class="texte">
+              <p>Les dépenses publiques traduisent les priorités nationales : santé, éducation, infrastructures, énergie
+                et agriculture.
+                Découvrez comment les ressources sont allouées et quelles sont les grandes réalisations prévues pour
+                2025.</p>
+            </div>
+            <div class="paragraphe">
+              🎯 Objectif de la section : Visualiser les choix budgétaires et les investissements majeurs.
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Sommaire</h2>
+            <p class="paraf">1. Répartition des dépenses par nature économique</p>
+            <p class="sousparaf">a/ Intérêts de la dette</p>
+            <p class="sousparaf">b/ Dépenses de soldes et pensions</p>
+            <p class="sousparaf">c/ Dépenses de fonctionnement des administrations publiques</p>
+            <p class="sousparaf">d/ Dépenses d’investissement</p>
+            <p class="paraf">2. Répartition des dépenses selon leur rattachement administratif</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="lien esp">
+        <a href="#">En savoir plus</a>
+      </div>
+    </section>
+
+    <section id="deficit" class="section video-section" data-index="4" aria-label="deficit">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/Market.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Déficit budgetaire</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="texte">
+              <p>Un budget équilibré est un signe de bonne gestion.
+                Pourtant, un déficit peut être nécessaire pour financer la croissance.
+                Cette section explique comment Madagascar équilibre ses comptes et finance ses projets, tout en
+                maîtrisant la dette.
+            </div>
+            <div class="paragraphe">
+              🎯 Objectif de la section : Expliquer simplement le déficit, ses causes et les moyens de financement.
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Sommaire</h2>
+            <p class="paraf">1. Situation du déficit</p>
+            <p class="paraf">2. Financement du déficit</p>
+          </div>
+        </div>
+      </div>
+      <div class="lien esp">
+        <a href="#">En savoir plus</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

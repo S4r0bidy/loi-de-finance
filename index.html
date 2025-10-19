@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loi de Finance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVBAR FIXE -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a class="brand" href="#accueil" data-index="0">BDC - Budjet des citoyens</a>
+      <ul class="nav-links">
+        <li><a href="#accueil" data-index="0">Accueil</a></li>
+        <li><a href="#perspective" data-index="1">Perspectives économiques</a></li>
+        <li><a href="#recettes" data-index="2">Recettes</a></li>
+        <li><a href="#depense" data-index="3">Dépenses</a></li>
+        <li><a href="#deficit" data-index="4">Déficit Budgétaire</a></li>
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- BOUTONS HAUT / BAS -->
+  <div class="nav-controls" aria-hidden="false">
+    <button id="prevBtn" class="control-btn" aria-label="Aller à la section précédente" title="Précédent">
+      <!-- SVG flèche haut -->
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+      </svg>
+    </button>
+
+    <button id="nextBtn" class="control-btn" aria-label="Aller à la section suivante" title="Suivant">
+      <!-- SVG flèche bas -->
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- SECTIONS PLEIN ÉCRAN -->
+  <main id="main">
+    <section id="accueil" class="section video-section" data-index="0" aria-label="Accueil">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/recette.mp4" type="video/mp4">
+      </video>
+      <div class="accueil">
+        <div class="carton">
+          <h1> Budget des Citoyens 2025 — Madagascar .</h1>
+          <div class="texte">
+            <p>"Promouvoir la transparence et rapprocher les citoyens de la gestion des finances publiques"</p>
+          </div>
+          <div class="paragraphe">
+            <p>Ce portail vous guide à travers les principales rubriques du Budget 2025 : recettes, dépenses, déficit,
+              dispositions fiscales et projets d'investissement. Explorez, filtrez et téléchargez les données.</p>
+          </div>
+          <div class="lien">
+            <a href="#">Télécharger le PDF ⬇️</a>
+          </div>
+        </div>
+        <div class="logo">
+          <img src="img/plop.png" width="350px">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="perspective" class="section video-section" data-index="1" aria-label="perspective">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/depense.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Perspectives économiques</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="texte">
+              <p>L’économie malgache poursuit sa transformation dans un contexte mondial incertain.
+                Cette section vous présente les grandes tendances économiques, les prévisions de croissance, et les
+                performances des secteurs clés pour 2024–2026.
+            </div>
+            <div class="paragraphe">
+              🎯 Objectif de la section : Identifier les moteurs de la croissance et les défis macroéconomiques du pays.
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Sommaire</h2>
+            <p class="paraf">Pérspectives sur:</p>
+            <p class="sousparaf">- l'agriculture</p>
+            <p class="sousparaf">- l’industrie extractive</p>
+            <p class="sousparaf">- le secteur tertiaire</p>
+          </div>
+        </div>
+      </div>
+      <div class="lien esp">
+        <a href="perspective.html">En savoir plus</a>
+      </div>
+    </section>
+
+    <section id="recettes" class="section video-section" data-index="2" aria-label="À propos">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/Stock.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Recettes publiques</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="questionnaire">
+              D’où viennent les ressources de l’État ?
+            </div>
+            <div class="texte">
+              <p>Les recettes publiques constituent la base du budget : impôts, droits de douane, dons et revenus non
+                fiscaux.
+                Cette section met en lumière la structure des recettes et leur évolution dans le temps.</p>
+            </div>
+            <div class="paragraphe">
+              🎯 Objectif de la section : Comprendre les sources de financement de l’État et leur poids dans le budget
+              global.
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Sommaire</h2>
+            <p class="paraf">1. Recette par sources</p>
+            <p class="paraf">2. Recette fiscale intérieur</p>
+            <p class="paraf">3. Recette douanières</p>
+            <p class="paraf">4. Recette non fiscales</p>
+            <p class="paraf">5. Don</p>
+          </div>
+        </div>
+      </div>
+      <div class="lien esp">
+        <a href="#">En savoir plus</a>
+      </div>
+    </section>
+
+    <section id="depense" class="section video-section" data-index="3" aria-label="Projets">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/deficit.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Dépenses publiques</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="questionnaire">
+              Comment l’État utilise-t-il les fonds collectés ?
+            </div>
+            <div class="texte">
+              <p>Les dépenses publiques traduisent les priorités nationales : santé, éducation, infrastructures, énergie
+                et agriculture.
+                Découvrez comment les ressources sont allouées et quelles sont les grandes réalisations prévues pour
+                2025.</p>
+            </div>
+            <div class="paragraphe">
+              🎯 Objectif de la section : Visualiser les choix budgétaires et les investissements majeurs.
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Sommaire</h2>
+            <p class="paraf">1. Répartition des dépenses par nature économique</p>
+            <p class="sousparaf">a/ Intérêts de la dette</p>
+            <p class="sousparaf">b/ Dépenses de soldes et pensions</p>
+            <p class="sousparaf">c/ Dépenses de fonctionnement des administrations publiques</p>
+            <p class="sousparaf">d/ Dépenses d’investissement</p>
+            <p class="paraf">2. Répartition des dépenses selon leur rattachement administratif</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="lien esp">
+        <a href="#">En savoir plus</a>
+      </div>
+    </section>
+
+    <section id="deficit" class="section video-section" data-index="4" aria-label="deficit">
+      <video class="bg-video" muted loop playsinline preload="none">
+        <source src="video/Market.mp4" type="video/mp4">
+      </video>
+      <div class="title">
+        <h1>Déficit budgetaire</h1>
+      </div>
+      <div class="tous">
+        <div class="contenu">
+          <div class="carton">
+            <div class="texte">
+              <p>Un budget équilibré est un signe de bonne gestion.
+                Pourtant, un déficit peut être nécessaire pour financer la croissance.
+                Cette section explique comment Madagascar équilibre ses comptes et finance ses projets, tout en
+                maîtrisant la dette.
+            </div>
+            <div class="paragraphe">
+              🎯 Objectif de la section : Expliquer simplement le déficit, ses causes et les moyens de financement.
+            </div>
+          </div>
+        </div>
+        <div class="sommaire">
+          <div class="carton">
+            <h2>Sommaire</h2>
+            <p class="paraf">1. Situation du déficit</p>
+            <p class="paraf">2. Financement du déficit</p>
+          </div>
+        </div>
+      </div>
+      <div class="lien esp">
+        <a href="#">En savoir plus</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
